@@ -1,0 +1,29 @@
+#g-search-bar {
+  display: block;
+  width: 33vw;
+  color:white;
+  background-color: rgb(53, 53, 53);
+  border: 1.5px solid white;
+  border-radius: 7px;
+  font-size: 2rem;
+  height: 3rem;
+  padding: 2px;
+}
+
+#search-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submit-search{
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  padding: 4px 6px;
+  border: none;
+  border-radius: 7.5px;
+  margin-top: 3px;
+}
