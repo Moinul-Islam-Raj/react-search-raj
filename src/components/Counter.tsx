@@ -5,7 +5,7 @@ interface Props {
   imgSrc?: string;
 }
 
-const Counter = ({ keys, imgSrc = "/vite.svg" }: Props) => {
+const Counter = ({ keys, imgSrc = "./vite.svg" }: Props) => {
   const [count, setCount] = useState(Number(localStorage.getItem(keys)) || 0);
   useEffect(() => {
     localStorage.setItem(keys, `${count}`);
