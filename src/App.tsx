@@ -4,23 +4,26 @@ import SearchBar from "./components/SearchBar";
 function App() {
   return (
     <div>
-      <h1>Kazi Abdur Rahman Raz is Dumb.</h1>
+      <h1>Kazi Abdur Rahman is Dumb.</h1>
       <SearchBar
-        title="Google Search"
+        title="Roogle Search"
         url="https://www.google.com/search"
         nameProp="q"
       />
       <SearchBar
-        title="Bing Search"
+        title="Raj Bing Search"
         url="https://www.bing.com/search"
         nameProp="q"
       />
       <SearchBar
-        title="YT Search"
+        title="Raj YT Search"
         url="https://www.youtube.com/results"
         nameProp="search_query"
       />
       <Counter keys="c-1" />
+      <h6>
+        Made By <em>Moinul Islam Raj</em>
+      </h6>
     </div>
   );
 }
