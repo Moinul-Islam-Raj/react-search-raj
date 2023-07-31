@@ -4,6 +4,7 @@ import SearchBar from "./components/SearchBar";
 function App() {
   return (
     <div>
+      <h1>Kazi Abdur Rahman Raz is Dumb.</h1>
       <SearchBar
         title="Google Search"
         url="https://www.google.com/search"
