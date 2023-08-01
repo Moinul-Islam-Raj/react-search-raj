@@ -6,6 +6,6 @@ body {
 
 .list-links {
   color: yellow;
-  text-decoration: none;
+  text-decoration: underline;
   font-family: cursive;
 }
