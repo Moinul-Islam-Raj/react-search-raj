@@ -4,7 +4,7 @@ import "./css/searchBar.css";
 
 const SearchBar = () => {
   const searchRef = useRef<HTMLInputElement>(null)
-  const id = Math.random()*1000
+  //const id = Math.random()*1000
   const engines = [
     {
       url:'https://www.google.com/search',
@@ -39,12 +39,13 @@ const SearchBar = () => {
         <option onClick={() => {setEngine(engines[1])}} className="" value="2">Bing</option>
         <option onClick={() => {setEngine(engines[2])}} className="" value="3">YouTube</option>
       </select>
+      
       <form className="search-form" action={engine.url} target="_blank">
+        <label style={{display:'b'}} htmlFor={"search-bar"}>{engine.title}</label>
         <div>
-          <label style={{display:'b'}} htmlFor={"search-bar-" + id}>{engine.title}</label>
           <input
             ref={searchRef}
-            id={"search-bar-" + id} 
+            id={"search-bar"} 
             type="search" 
             name={engine.name} 
             className='search-input'
