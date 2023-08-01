@@ -4,26 +4,42 @@ import SearchBar from "./components/SearchBar";
 function App() {
   return (
     <div>
-      <h1>Kazi Abdur Rahman is Dumb.</h1>
-      <SearchBar
-        title="Roogle Search"
-        url="https://www.google.com/search"
-        nameProp="q"
-      />
-      <SearchBar
-        title="Raj Bing Search"
-        url="https://www.bing.com/search"
-        nameProp="q"
-      />
-      <SearchBar
-        title="Raj YT Search"
-        url="https://www.youtube.com/results"
-        nameProp="search_query"
-      />
+        <h3 className="my-2" style={{textAlign: 'center'}}>List of Dumbs</h3>
+        <hr />
+        <table className="table table-striped table-dark">
+          <thead>
+            <th scope="col">Name</th>
+            <th scope="col">Nick Name</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="table-item">Kazi Abdur Rahman</td>
+              <td className="table-item">Gadha</td>
+            </tr>
+            <tr>
+              <td>Shoshikar Mollik</td>
+              <td>Banana</td>
+            </tr>
+            <tr>
+              <td>Ali Altaf Sami</td>
+              <td>Poklu</td>
+            </tr>
+            <tr>
+              <td>Omor Faruk</td>
+              <td>Khalpha</td>
+            </tr>
+          </tbody>
+        </table>
+      <h3 style={{textAlign: 'center'}}>Searches</h3>
+      <hr />
+      <SearchBar />
+
+      <h3 className="mt-2" style={{textAlign: 'center'}}>Counter</h3>
+      <hr />
       <Counter keys="c-1" />
-      <h6>
-        Made By <em>Moinul Islam Raj</em>
-      </h6>
+      <div style={{display:'flex', justifyContent:'center'}}>
+        <em style={{fontSize: '2rem'}}>Moinul Islam Raj</em>
+      </div>
     </div>
   );
 }

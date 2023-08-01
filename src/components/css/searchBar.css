@@ -1,29 +1,36 @@
-#g-search-bar {
-  display: block;
-  width: 80vw;
-  color:white;
+.search-input {
+  width: 75vw;
+  font-weight: lighter;
+  color: white;
   background-color: rgb(53, 53, 53);
   border: 1.5px solid white;
   border-radius: 7px;
-  font-size: 2rem;
-  height: 3rem;
-  padding: 2px;
+  font-size: 1.2rem;
+  height: auto;
+  padding-left: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  height: 2rem;
 }
 
-#search-google {
-  display: flex;
-  justify-content: center;
+.search-form {
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.submit-search{
-  width: 100%;
+.search-submit {
+  margin: 0;
+  width: 20vw;
+  font-size: 1rem;
   color: white;
   font-weight: bold;
   background-color: red;
   padding: 4px 6px;
   border: none;
-  border-radius: 7.5px;
-  margin-top: 3px;
+  border-radius: 7px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 2rem;
 }

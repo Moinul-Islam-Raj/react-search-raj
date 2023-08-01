@@ -1,26 +1,56 @@
+import { useRef, useState } from "react";
 import "./css/searchBar.css";
 
-interface Props {
-  title?: string;
-  url: string;
-  nameProp: string;
-}
 
-const clearInputs = () => {};
+const SearchBar = () => {
+  const searchRef = useRef<HTMLInputElement>(null)
+  const id = Math.random()*1000
+  const engines = [
+    {
+      url:'https://www.google.com/search',
+      name: 'q',
+      title: 'Google Search',
+    },
+    {
+      url:'https://www.bing.com/search',
+      name: 'q',
+      title: 'Bing Search',
+    },
+    {
+      url:'https://www.youtube.com/results',
+      name: 'search_query',
+      title: 'YouTube Search',
+    }
+  ]
 
-const SearchBar = ({ url, nameProp, title = "Search" }: Props) => {
+  const [engine, setEngine] = useState(engines[2])
+
+  function clear(e: React.MouseEvent) {
+    if(searchRef.current?.value == '') e.preventDefault()
+    setTimeout(() => {
+    if(searchRef.current == null) return
+    searchRef.current.value = ''
+    })
+  }
   return (
     <>
-      <form
-        onSubmit={clearInputs}
-        id="search-google"
-        action={url}
-        target="_blank"
-      >
+      <select name="search-val" id="">
+        <option onClick={() => {setEngine(engines[0])}} className="" value="1">Google</option>
+        <option onClick={() => {setEngine(engines[1])}} className="" value="2">Bing</option>
+        <option onClick={() => {setEngine(engines[2])}} className="" value="3">YouTube</option>
+      </select>
+      <form className="search-form" action={engine.url} target="_blank">
         <div>
-          <label>{title}</label>
-          <input type="search" name={nameProp} id="g-search-bar" />
-          <input type="submit" className="submit-search" />
+          <label style={{display:'b'}} htmlFor={"search-bar-" + id}>{engine.title}</label>
+          <input
+            ref={searchRef}
+            id={"search-bar-" + id} 
+            type="search" 
+            name={engine.name} 
+            className='search-input'
+            placeholder="Search"
+          />
+          <input onClick={clear} type="submit" className="search-submit" value="Search" />
         </div>
       </form>
     </>
