@@ -1,9 +1,11 @@
 const Table = () => {
   return (
-    <table className="table table-striped table-dark">
+    <table className="table table-striped table-dark table-focusable">
       <thead>
-        <th scope="col">Name</th>
-        <th scope="col">Nick Name</th>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Nick Name</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
@@ -20,7 +22,7 @@ const Table = () => {
         </tr>
         <tr>
           <td>Omor Faruk</td>
-          <td>Khalpha</td>
+          <td>Khalipha</td>
         </tr>
       </tbody>
     </table>
