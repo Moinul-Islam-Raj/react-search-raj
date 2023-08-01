@@ -36,7 +36,7 @@ const SearchBar = () => {
     })
   }
   return (
-    <div className="container pb-3">
+    <div className="container-fluid pb-3">
       <form className="search-form my-3" action={engine.url} target="_blank">
         <div>
           <input

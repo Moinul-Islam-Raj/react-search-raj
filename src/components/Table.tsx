@@ -3,7 +3,7 @@ const Table = () => {
     <table className="table table-striped table-dark table-focusable">
       <thead>
         <tr>
-          <th scope="col">Name</th>
+          <th scope="col">Full Name</th>
           <th scope="col">Nick Name</th>
         </tr>
       </thead>
