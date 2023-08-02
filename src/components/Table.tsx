@@ -9,20 +9,28 @@ const Table = () => {
       </thead>
       <tbody>
         <tr>
-          <td className="table-item">Kazi Abdur Rahman</td>
-          <td className="table-item">Gadha</td>
+          <td>Kazi Abdur Rahman</td>
+          <td>গাধা</td>
         </tr>
         <tr>
           <td>Shoshikar Mollik</td>
-          <td>Banana</td>
+          <td>কলা</td>
         </tr>
         <tr>
           <td>Ali Altaf Sami</td>
-          <td>Poklu</td>
+          <td>পক্লু</td>
         </tr>
         <tr>
           <td>Omor Faruk</td>
-          <td>Khalipha</td>
+          <td>খলিফা</td>
+        </tr>
+        <tr>
+          <td>Abu Noim</td>
+          <td>ছাগল</td>
+        </tr>
+        <tr>
+          <td>Moinul Islam Raj</td>
+          <td>Human</td>
         </tr>
       </tbody>
     </table>
